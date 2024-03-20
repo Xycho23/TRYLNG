@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Notes for Mental Health</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><span class="highlight">Public Notes for Mental Health</span></h1>
+    </header>
+    <main>
+        <div class="container">
+            <form id="noteForm">
+                <div id="signInContainer">
+                    <label for="username">Welcome:</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                    <button type="button" id="signInBtn">Sign In</button>
+                </div>
+                <div id="noteInputContainer" style="display: none;">
+                    <label for="note">Your Note:</label>
+                    <textarea id="note" rows="4" cols="50" placeholder="Enter your note" required></textarea>
+                    <button type="submit">Add Note</button>
+                    <button type="button" id="signOutBtn">Sign Out</button>
+                </div>
+            </form>
+            <div id="notesContainer"></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Public Notes for Mental Health</p>
+    </footer>
+
+    <!-- Running cat and dog GIFs -->
+    <img src="running_cat.gif" alt="Running Cat" class="running-cat">
+    <img src="running_dog.gif" alt="Running Dog" class="running-dog">
+
+    <script src="script.js"></script>
+</body>
+</html>
